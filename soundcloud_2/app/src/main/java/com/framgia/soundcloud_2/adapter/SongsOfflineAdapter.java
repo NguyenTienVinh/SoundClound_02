@@ -51,12 +51,8 @@ public class SongsOfflineAdapter
         return mListTracks != null ? mListTracks.size() : 0;
     }
 
-    public void setClickListener(ItemClickListener itemClickListener) {
-        mClickListener = itemClickListener;
-    }
-
     public interface ItemClickListener {
-        void onClick(int position);
+        void onClick(View view, int position);
     }
 
     public class SongsOfflineViewHolder extends RecyclerView.ViewHolder
@@ -80,7 +76,7 @@ public class SongsOfflineAdapter
 
         @Override
         public void onClick(View view) {
-            if (mClickListener != null) mClickListener.onClick(getAdapterPosition());
+            if (mClickListener != null) mClickListener.onClick(view, getAdapterPosition());
         }
     }
 }

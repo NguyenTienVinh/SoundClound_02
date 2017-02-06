@@ -39,6 +39,9 @@ public class Track {
         mTitle = cursor.getString(cursor.getColumnIndex(DatabaseManager.COLUMN_TITLE));
     }
 
+    public Track() {
+    }
+
     public String getArtworkUrl() {
         return mArtworkUrl;
     }

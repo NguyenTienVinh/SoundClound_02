@@ -66,7 +66,6 @@ public class DatabaseManager extends SQLiteOpenHelper {
             for (Track track : list) {
                 if (track.getUser().getUserName() == null) return;
                 ContentValues values = new ContentValues();
-                values.put(COLUMN_ID, track.getId());
                 values.put(COLUMN_TITLE, track.getTitle());
                 values.put(COLUMN_ARTWORK_URL, track.getArtworkUrl());
                 values.put(COLUMN_DOWNLOADABLE, track.isDownloadAble() ? TRUE : FALSE);

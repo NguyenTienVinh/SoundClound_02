@@ -24,7 +24,28 @@
         android:id="@+id/text_artist_name"
         style="@style/TextDetailSongs"
         android:textSize="@dimen/sp_15"/>
+    <LinearLayout
+        android:id="@+id/linear_repeat_shuffle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <ImageButton
+            android:id="@+id/image_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/bg_btn_repeat"
+            android:layout_weight="0.3"/>
+
+        <ImageButton
+            android:id="@+id/image_shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/bg_btn_shuffle"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/linear_seekbar"
         android:layout_width="match_parent"
@@ -63,12 +84,18 @@
             android:id="@+id/image_play_previous"
             style="@style/ImageButtonDetailSongs"
             android:src="@android:drawable/ic_media_previous"/>
-
+        <ImageButton
+            android:id="@+id/image_play_backward"
+            style="@style/ImageButtonDetailSongs"
+            android:src="@android:drawable/ic_media_rew"/>
         <ImageButton
             android:id="@+id/image_play_pause"
             style="@style/ImageButtonDetailSongs"
             android:src="@android:drawable/ic_media_play"/>
-
+        <ImageButton
+            android:id="@+id/image_play_forward"
+            style="@style/ImageButtonDetailSongs"
+            android:src="@android:drawable/ic_media_ff"/>
         <ImageButton
             android:id="@+id/image_play_next"
             style="@style/ImageButtonDetailSongs"

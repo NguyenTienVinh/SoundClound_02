@@ -52,12 +52,20 @@ public class Constant {
 
     public static class KeyIntent {
         public static final String EXTRA_CATEGORY = "category";
+        public static final String EXTRA_ICON_PLAY_PAUSE = "iconplay";
+        public static final String EXTRA_ICON_REPEAT_NOREPEAT = "iconrepeat";
+        public static final String EXTRA_ICON_SHUFFLE_NOSHUFFLE = "iconshuffle";
+        public static final String EXTRA_ICON_FORWARD = "iconforward";
+        public static final String EXTRA_ICON_BACKWARD = "iconbackward";
         public static final String EXTRA_DURATION = "duration";
         public static final String EXTRA_FULL_DURATION = "fullduration";
         public static final String ACTION_UPDATE_CONTROL =
             "com.soundcloud_2.action.ACTION_UPDATE_CONTROL";
+        public static final String ACTION_UPDATE_CONTROL_DURATION = "ACTION_UPDATE_CONTROL_DURATION";
         public static final String ACTION_PLAY_NEW_SONG =
             "com.soundcloud_2.action.ACTION_PLAY_NEW_SONG";
+        public static final String ACTION_UPDATE_AUDIO = "com.soundcloud_2.action.ACTION_UPDATE_AUDIO";
+        public static final String ACTION_UPDATE_AUDIO_DURATION = "com.soundcloud_2.action.ACTION_UPDATE_AUDIO_DURATION";
         public static final String ACTION_PLAY = "com.soundcloud_2.action.ACTION_PLAY";
         public static final String ACTION_PAUSE = "com.soundcloud_2.action.ACTION_PAUSE";
         public static final String ACTION_STOP = "com.soundcloud_2.action.ACTION_STOP";
@@ -81,6 +89,9 @@ public class Constant {
         public static final String PARAM_QUERY = "q";
         public static final String PATH_SEARCH = "search/tracks";
         public static final String EXTRA_QUERY = "query";
+        public static final String EXTRA_TITLE = "title";
+        public static final String EXTRA_USER_NAME = "username";
+        public static final String EXTRA_IMAGE_URL = "imageurl";
         public static final String URL_SOUNDCLOUD = "https://api-v2.soundcloud.com/";
         public static final String PATH_SONG = "charts";
         public static final String PARAM_CLIENT_ID = "client_id";
